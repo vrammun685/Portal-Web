@@ -1,0 +1,60 @@
+body {
+    background: radial-gradient(circle at 100% 50%, #151961, #4b1972);
+    display: flex;
+}
+
+p {
+    font-size: 16px;
+    color: aliceblue;
+}
+
+h2{
+    color: aliceblue;
+}
+
+#izquierda {
+    margin-right: 20%;
+}
+
+#gif {
+    padding-top: 60%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#gif img {
+    width: 200%; /* Ajusta el ancho del GIF al 100% del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Aplica el mismo tamaño a todos los divs con el icono */
+#icono {
+    width: 120px; /* Tamaño reducido para el contenedor del ícono */
+    height: 150px; /* Altura ajustada */
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    align-items: center; /* Centra los íconos y textos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    margin-bottom: 10px; /* Espacio entre los iconos si hay varios */
+}
+
+/* Aplica el tamaño reducido a las imágenes dentro de los iconos */
+#iconotexto {
+    width: 70%; /* Tamaño reducido para las imágenes */
+    height: 70%; /* Altura fija para la imagen */
+    object-fit: contain; /* Mantiene la proporción original sin recortar */
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+}
+
+/* Ajuste de estilo para el texto debajo de cada ícono */
+#textoderecha {
+    width: 80%; /* Ajusta el ancho del contenedor para limitarlo */
+    margin-left: 60%; /* Empuja el contenedor hacia la derecha */
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    text-align: center;
+    padding: 10px; /* Añade un poco de espacio interno */
+}

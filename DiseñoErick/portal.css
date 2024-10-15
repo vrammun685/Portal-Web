@@ -1,0 +1,94 @@
+body {
+    background-image: url('fondo.jpg');
+    background-size: cover; /* Cubre toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que el fondo no se mueva al hacer scroll */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: flex-start; /* Alinea los elementos desde arriba hacia abajo */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Altura de la ventana completa */
+    margin: 0;
+    position: relative;
+}
+
+#cabeza {
+    display: flex; /* Utiliza Flexbox para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    width: 45%; /* Ancho del contenedor ajustado */
+    padding: 5px; /* Menos espacio interno alrededor del contenido */
+    margin-bottom: 10px; /* Espacio inferior entre cabeza y menú */
+    background-color: rgba(124, 117, 117, 0.5);
+    border-radius: 15px; /* Ajusta este valor según el nivel de redondeo que desees */
+    margin-top: 2%;
+}
+
+#cabeza img {
+    max-width: 40%; /* La imagen no será más ancha que el 40% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+#titulo {
+    font-size: 36px; /* Tamaño de fuente reducido */
+    color: rgb(77, 8, 23);
+    text-align: center;
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+#eslogan {
+    font-size: 18px; /* Tamaño de fuente reducido */
+    color: rgb(63, 3, 18);
+    text-align: center;
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+#menu {
+    display: flex; /* Utiliza Flexbox para alinear elementos en fila */
+    justify-content: center; /* Centra horizontalmente los íconos */
+    width: 3%; /* Se asegura de que el menú ocupe todo el ancho disponible */
+    margin-bottom: 20px; /* Añade algo de espacio debajo del menú */
+    background-color: rgba(124, 117, 117, 0.5);
+    border-radius: 15px; /* Ajusta este valor según el nivel de redondeo que desees */
+}
+
+#menusacado {
+    
+    justify-content: center; /* Centra horizontalmente los íconos */
+    width: 35%; /* Ancho del contenedor */
+    padding: 30px; /* Menos espacio interno alrededor del contenido */
+    position: absolute; /* Hace que el contenedor de íconos esté en una posición fija */
+    bottom: 35%; /* Lo fija a 50% de la altura del contenedor */
+    background-color: rgba(124, 117, 117, 0.5); /* El último valor, 0.5, define la opacidad: 0 es completamente transparente, 1 es completamente opaco */
+    border-radius: 15px; /* Ajusta este valor según el nivel de redondeo que desees */
+}
+
+.hidden {
+    display: none; /* Esta clase oculta el menú */
+}
+
+.show {
+    display: flex; /* Esta clase lo muestra cuando sea necesario */
+}
+
+#iconos {
+    display: flex; /* Utiliza Flexbox para alinear elementos en fila */
+    justify-content: center; /* Centra horizontalmente los íconos */
+    width: 30%; /* Ancho del contenedor */
+    padding: 5px; /* Menos espacio interno alrededor del contenido */
+    position: absolute; /* Hace que el contenedor de íconos esté en una posición fija */
+    bottom: 20px; /* Lo fija a 20px del fondo de la pantalla */
+}
+
+.enlace {
+    width: 100px; /* Ancho fijo para los íconos */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 10px; /* Espacio entre los íconos */
+}
+
+.icono {
+    width: 30px; /* Ancho fijo para los íconos */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 10px; /* Espacio entre los íconos */
+}
